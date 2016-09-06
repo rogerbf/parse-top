@@ -9,7 +9,11 @@
     "build": "babel --ignore *.test.js --out-dir dist src",
     "prepublish": "npm run build"
   },
-  "keywords": ["top", "cli", "util"],
+  "keywords": [
+    "top",
+    "cli",
+    "util"
+  ],
   "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
   "license": "MIT",
   "devDependencies": {
@@ -39,5 +43,13 @@
   },
   "bin": {
     "parse-top": "./dist/bin/cli.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerbf/parse-top.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rogerbf/parse-top/issues"
+  },
+  "homepage": "https://github.com/rogerbf/parse-top#readme"
 }
