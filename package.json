@@ -1,0 +1,43 @@
+{
+  "name": "parse-top",
+  "version": "0.0.1",
+  "description": "parses the output of top",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo 'no tests'",
+    "prebuild": "npm test && rimraf dist",
+    "build": "babel --ignore *.test.js --out-dir dist src",
+    "prepublish": "npm run build"
+  },
+  "keywords": ["top", "cli", "util"],
+  "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "6.14.0",
+    "babel-preset-es2015": "6.14.0",
+    "rimraf": "2.5.4"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6
+    }
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "object-from-string": "0.0.1"
+  },
+  "bin": {
+    "parse-top": "./dist/bin/cli.js"
+  }
+}
